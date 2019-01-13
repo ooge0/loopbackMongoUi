@@ -1,0 +1,23 @@
+{
+  "name": "staff",
+  "plural": "staffs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+      "last_name": {
+        "type": "string",
+        "required": true
+      },
+      "staff_position": {
+        "type": "string",
+        "required": true
+      }
+  }
+}

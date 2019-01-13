@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Items</title>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="js/lb-services.js"></script>
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" ng-app="myItems" ng-controller="myItemsController">
+                    <div class="">
+                        <h1>Item's List</h1>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+
+                            <div class="input-group mb-3">
+                                <input ng-model="newItem" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button ng-click="pushItem()" class="btn btn-outline-secondary" type="button">Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <ul ng-repeat="i in items">
+                        {{i.name}}
+                        <span ng-click="deleteItem($index)" class="btn btn-primary">x</span>
+                    </ul>
+                    
+                </div>
+                <script src="js/app.js"></script>
+        <!-- create new area EXTRA OUTPUT FIELD-->
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" ng-app="myStaffs" ng-controller="myItemsControllerStaff">
+                    <div class="">
+                        <h1>Staff first text box</h1>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+
+                            <div class="input-group mb-3">
+                                <input ng-model="newStaff" type="text" class="form-control" placeholder="Staff item" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button ng-click="pushStaff()" class="btn btn-outline-secondary" type="button">Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <ul ng-repeat="i in items">
+                        {{i.first_name}}
+                        <span ng-click="deleteStaff($index)" class="btn btn-primary">x</span>
+                    </ul>
+                    
+                </div>
+
+
+
+    
+    <script src="js/app2.js"></script>
+</body>
+
+</html>

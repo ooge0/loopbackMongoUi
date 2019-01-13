@@ -1,0 +1,12 @@
+{
+  "mongoDS2": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "student",
+    "password": "",
+    "name": "mongoDS2",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

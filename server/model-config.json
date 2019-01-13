@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongoDS2"
+  },
+  "AccessToken": {
+    "dataSource": "mongoDS2",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongoDS2",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongoDS2",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongoDS2",
+    "public": false
+  },
+  "item": {
+    "dataSource": "mongoDS2",
+    "public": true
+  },
+  "staff": {
+    "dataSource": "mongoDS2",
+    "public": true
+  }
+}
