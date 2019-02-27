@@ -11,13 +11,17 @@
       "type": "string",
       "required": true
     },
-      "last_name": {
-        "type": "string",
-        "required": true
-      },
-      "staff_position": {
-        "type": "string",
-        "required": true
-      }
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "staff_position": {
+      "type": "string",
+      "required": true
+    },
+    "starship": {
+      "type": "string",
+      "required": true
+    }
   }
 }
