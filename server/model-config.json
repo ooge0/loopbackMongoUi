@@ -42,5 +42,9 @@
   "staff": {
     "dataSource": "mongoDS2",
     "public": true
+  },
+  "records": {
+    "dataSource": "mongoDS2",
+    "public": true
   }
 }

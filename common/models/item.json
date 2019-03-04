@@ -10,27 +10,10 @@
     "name": {
       "type": "string",
       "required": true
-    },
-    "partNumber": {
-      "type": "Number",
-      "required": true
-    },
-    "Address": {
-    "type": ["object"]
-    },
-    "Address2": {
-      "type": ["object"],
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "partNumber": {
-        "type": "Number",
-        "required": true
-      }
-      },
-    "words": [
-      {"type": "string", "length": 64 }
-    ]
     }
-  }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
