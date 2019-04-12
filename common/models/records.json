@@ -20,8 +20,14 @@
       "required": true
     },
     "recordRelation": {
-      "type": [
-        "string"
+      "type": [ 
+        {
+      "relationType": {
+      "type": "string",
+      "required": true,
+      "default": "defaultRelationType"
+      } 
+        }
       ],
       "required": true
     },
@@ -39,4 +45,5 @@
   "relations": {},
   "acls": [],
   "methods": {}
-}
+ }
+ 
