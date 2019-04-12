@@ -1,0 +1,49 @@
+{
+  "name": "records",
+  "plural": "records",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "recordId": {
+      "type": "number",
+      "required": true
+    },
+    "recordLabel": {
+      "type": "string",
+      "required": true
+    },
+    "recordCreationData": {
+      "type": "date",
+      "required": true
+    },
+    "recordRelation": {
+      "type": [ 
+        {
+      "relationType": {
+      "type": "string",
+      "required": true,
+      "default": "defaultRelationType"
+      } 
+        }
+      ],
+      "required": true
+    },
+    "recordOwner": {
+      "type": "string",
+      "required": true
+    },
+    "recordStatus": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+ }
+ 
