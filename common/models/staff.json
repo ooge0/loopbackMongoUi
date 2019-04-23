@@ -7,19 +7,19 @@
     "validateUpsert": true
   },
   "properties": {
-    "first_name": {
+    "firstName": {
       "type": "string",
       "required": true
     },
-    "last_name": {
+    "lastName": {
       "type": "string",
       "required": true
     },
-    "staff_position": {
+    "staffPosition": {
       "type": "string",
       "required": true
     },
-    "starship": {
+    "starShip": {
       "type": "string",
       "required": true
     }
