@@ -1,0 +1,56 @@
+{
+  "name": "people",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "defaultName"
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "default": "defaultEmail"
+    },
+    "isDeveloper": {
+      "type": "boolean",
+      "required": true
+    },
+    "age": {
+      "type": "number",
+      "required": true
+    },
+    "userAddress": {
+      "type": {
+        "city": {
+            "type": "string",
+            "required": true,
+            "default": "trueCity"
+          },
+        "country":{
+          "type": "string",
+          "required": true,
+          "default": "trueCountry"
+        },
+        "houseNumber": {
+          "type": "number",
+          "required": true,
+          "default": 0
+        },
+        "street": {
+          "type": "string",
+          "required": true,
+          "default": "trueStreet"
+        }
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

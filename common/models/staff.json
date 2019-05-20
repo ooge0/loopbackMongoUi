@@ -19,7 +19,7 @@
       "type": "string",
       "required": true
     },
-    "starship": {
+    "starShip": {
       "type": "string",
       "required": true
     }

@@ -46,5 +46,9 @@
   "records": {
     "dataSource": "mongoDS2",
     "public": true
+  },
+  "people": {
+    "dataSource": "mongoDS2",
+    "public": true
   }
 }
